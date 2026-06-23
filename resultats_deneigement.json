@@ -1,0 +1,130 @@
+{
+  "Outremont": {
+    "economique": {
+      "scenario": "economique",
+      "n_vehicules": 3,
+      "distance_totale_km": 11.05,
+      "cout_total_$": 1513.37,
+      "duree_max_h": 0.43,
+      "couverture_%": 18.1,
+      "km_reseau": 23.85,
+      "ratio_cout_km": 63.46
+    },
+    "social": {
+      "scenario": "social",
+      "n_vehicules": 3,
+      "distance_totale_km": 11.05,
+      "cout_total_$": 1513.37,
+      "duree_max_h": 0.43,
+      "couverture_%": 18.1,
+      "km_reseau": 23.85,
+      "ratio_cout_km": 63.46
+    },
+    "mixte": {
+      "scenario": "mixte",
+      "n_vehicules": 3,
+      "distance_totale_km": 11.05,
+      "cout_total_$": 1513.37,
+      "duree_max_h": 0.43,
+      "couverture_%": 18.1,
+      "km_reseau": 23.85,
+      "ratio_cout_km": 63.46
+    }
+  },
+  "Verdun": {
+    "economique": {
+      "scenario": "economique",
+      "n_vehicules": 3,
+      "distance_totale_km": 18.05,
+      "cout_total_$": 1521.85,
+      "duree_max_h": 0.86,
+      "couverture_%": 20.0,
+      "km_reseau": 43.0,
+      "ratio_cout_km": 35.39
+    },
+    "social": {
+      "scenario": "social",
+      "n_vehicules": 3,
+      "distance_totale_km": 18.05,
+      "cout_total_$": 1521.85,
+      "duree_max_h": 0.86,
+      "couverture_%": 20.0,
+      "km_reseau": 43.0,
+      "ratio_cout_km": 35.39
+    },
+    "mixte": {
+      "scenario": "mixte",
+      "n_vehicules": 3,
+      "distance_totale_km": 18.05,
+      "cout_total_$": 1521.85,
+      "duree_max_h": 0.86,
+      "couverture_%": 20.0,
+      "km_reseau": 43.0,
+      "ratio_cout_km": 35.39
+    }
+  },
+  "Anjou": {
+    "economique": {
+      "scenario": "economique",
+      "n_vehicules": 3,
+      "distance_totale_km": 12.6,
+      "cout_total_$": 1515.25,
+      "duree_max_h": 0.71,
+      "couverture_%": 12.8,
+      "km_reseau": 35.18,
+      "ratio_cout_km": 43.07
+    },
+    "social": {
+      "scenario": "social",
+      "n_vehicules": 3,
+      "distance_totale_km": 12.6,
+      "cout_total_$": 1515.25,
+      "duree_max_h": 0.71,
+      "couverture_%": 12.8,
+      "km_reseau": 35.18,
+      "ratio_cout_km": 43.07
+    },
+    "mixte": {
+      "scenario": "mixte",
+      "n_vehicules": 3,
+      "distance_totale_km": 12.6,
+      "cout_total_$": 1515.25,
+      "duree_max_h": 0.71,
+      "couverture_%": 12.8,
+      "km_reseau": 35.18,
+      "ratio_cout_km": 43.07
+    }
+  },
+  "RDP": {
+    "economique": {
+      "scenario": "economique",
+      "n_vehicules": 3,
+      "distance_totale_km": 33.31,
+      "cout_total_$": 1540.31,
+      "duree_max_h": 2.01,
+      "couverture_%": 16.6,
+      "km_reseau": 82.7,
+      "ratio_cout_km": 18.63
+    },
+    "social": {
+      "scenario": "social",
+      "n_vehicules": 3,
+      "distance_totale_km": 33.31,
+      "cout_total_$": 1540.31,
+      "duree_max_h": 2.01,
+      "couverture_%": 16.6,
+      "km_reseau": 82.7,
+      "ratio_cout_km": 18.63
+    },
+    "mixte": {
+      "scenario": "mixte",
+      "n_vehicules": 3,
+      "distance_totale_km": 33.31,
+      "cout_total_$": 1540.31,
+      "duree_max_h": 2.01,
+      "couverture_%": 16.6,
+      "km_reseau": 82.7,
+      "ratio_cout_km": 18.63
+    }
+  }
+}
