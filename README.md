@@ -54,6 +54,8 @@ projet_deneigement/
 
 ### Dépendances
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install networkx matplotlib reportlab numpy
 ```
 
