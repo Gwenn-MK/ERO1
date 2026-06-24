@@ -6,7 +6,7 @@ Script de démonstration de la solution d'optimisation des déneigeuses — Mont
 Usage:
     python demo.py [--secteur SECTEUR] [--scenario SCENARIO] [--vehicules N]
 
-Auteurs: L.Blet & H.Paris (EPITA)
+Auteurs: Meku · Akanni · Bensammar · Hookoom — ÉPITA
 """
 
 import argparse
@@ -154,6 +154,11 @@ def comparaison_scenarios(secteur: str, n_vehicles: int):
         kv("  Durée max / véhicule", f"{ind['duree_max_h']} h")
         kv("  Objectif"           , sc_info["objectif"])
         kv("  Risque principal"   , sc_info["risque"])
+        from scripts.graph_utils import compute_priority_delay
+        G2 = generate_sector_graph(secteur)
+        delay = compute_priority_delay(G2, r["routes"], sc)
+        kv("  Artères couvertes 1ère moitié", f"{delay['arteres_couvertes_1ere_moitie_%']} %")
+        kv("  Ruelles couvertes 1ère moitié", f"{delay['ruelles_couvertes_1ere_moitie_%']} %")
 
     # Recommandation
     couts = {sc: results[sc]["indicateurs"]["cout_total_$"] for sc in results}
