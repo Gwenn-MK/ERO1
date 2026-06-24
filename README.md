@@ -1,5 +1,5 @@
 # Optimisation Hivernale — Déneigement Montréal
-**Auteurs :** Mariam Anu Akanni , Anna Bensammar , Hans Hookoom , Gwenn Meku Kengne
+**Auteurs :** L.Blet & H.Paris — ÉPITA
 
 ---
 
@@ -21,18 +21,18 @@ Postman Problem — CPP). Trois scénarios de priorisation sont étudiés :
 
 ```
 projet_deneigement/
-├── AUTHORS                     
-├── README.md                   
-├── demo.py                     
+├── AUTHORS                     # Liste des auteurs
+├── README.md                   # Ce fichier
+├── demo.py                     # Script de démonstration principal
 ├── rapport/
-│   └── rapport_deneigement.pdf 
+│   └── rapport_deneigement.pdf # Rapport (max 8 pages)
 ├── scripts/
-│   ├── graph_utils.py          
-│   └── generate_rapport.py     
+│   ├── graph_utils.py          # Module principal : graphes, CPP, coûts
+│   └── generate_rapport.py     # Génération du rapport PDF
 └── secteurs/
     ├── Outremont/
     │   ├── analyse_outremont.py
-    │   └── itineraire_*.json   
+    │   └── itineraire_*.json   # (générés à l'exécution)
     ├── Verdun/
     │   ├── analyse_verdun.py
     │   └── itineraire_*.json
@@ -54,9 +54,7 @@ projet_deneigement/
 
 ### Dépendances
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install networkx matplotlib numpy reportlab
+pip install networkx matplotlib reportlab numpy
 ```
 
 ---

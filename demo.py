@@ -67,28 +67,32 @@ def warn(msg: str):
 SCENARIOS = {
     "economique": {
         "label"      : "Économique",
-        "description": "Minimise la distance totale parcourue. Réduit les coûts opérationnels "
-                       "au maximum. Aucune priorisation par type de voie.",
-        "objectif"   : "Réduire le coût journalier de déneigement.",
-        "cible"      : "Municipalité / budget.",
-        "risque"     : "Axes commerciaux et écoles traités en dernier.",
+        "description": "Priorise les axes commerciaux et zones logistiques pour permettre "
+                       "l'ouverture rapide des commerces et le maintien de l'activité économique "
+                       "en hiver. Les axes d'urgence sont traités normalement ; "
+                       "les rues résidentielles et secondaires en dernier.",
+        "objectif"   : "Ouvrir les axes commerciaux et réduire les délais logistiques.",
+        "cible"      : "Commerçants, livreurs, zones industrielles (ex. Anjou).",
+        "risque"     : "Zones résidentielles et écoles déneigées en dernier.",
         "color"      : GREEN,
     },
     "social": {
         "label"      : "Social",
-        "description": "Priorise les artères principales, hôpitaux, écoles et arrêts de bus. "
-                       "Le coût peut être plus élevé mais l'impact citoyen est maximal.",
-        "objectif"   : "Garantir la sécurité des Montréalais en < 4h sur les axes critiques.",
-        "cible"      : "Citoyens, services d'urgence, usagers des transports.",
-        "risque"     : "Surcoût horaire si les déneigeuses dépassent 8h de service.",
+        "description": "Priorise d'abord les axes d'urgence (hôpitaux, pompiers, CIUSSS), "
+                       "puis les zones résidentielles (écoles, arrêts de bus, rues de quartier). "
+                       "Les axes commerciaux sont traités en dernier.",
+        "objectif"   : "Garantir la sécurité des Montréalais et l'accès aux services d'urgence.",
+        "cible"      : "Résidents, services d'urgence, usagers des transports en commun.",
+        "risque"     : "Surcoût horaire si les déneigeuses dépassent 8h ; commerces ouverts tardivement.",
         "color"      : CYAN,
     },
     "mixte": {
         "label"      : "Mixte",
-        "description": "Équilibre entre coût et impact social. Les axes prioritaires sont "
-                       "traités en premier, mais le routage global reste efficient.",
+        "description": "Compromis équilibré : axes d'urgence en premier, puis axes commerciaux "
+                       "et résidentiels à égalité, secondaires en dernier. "
+                       "Optimise le service global sans sacrifier ni l'économie ni la sécurité.",
         "objectif"   : "Compromis coût/service optimal pour la ville.",
-        "cible"      : "Municipalité + citoyens.",
+        "cible"      : "Municipalité + citoyens + commerçants.",
         "risque"     : "Moins optimal que chaque scénario pur sur son critère propre.",
         "color"      : YELLOW,
     },
