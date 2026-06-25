@@ -1,0 +1,38 @@
+{
+  "secteur": "Anjou",
+  "scenario": "economique",
+  "indicateurs": {
+    "scenario": "economique",
+    "n_vehicules": 3,
+    "distance_totale_km": 309.03,
+    "cout_total_$": 1875.3,
+    "duree_max_h": 10.32,
+    "couverture_%": 100.0,
+    "km_reseau": 217.62,
+    "ratio_cout_km": 8.62,
+    "arteres_couvertes_1ere_moitie_%": 71.5,
+    "ruelles_couvertes_1ere_moitie_%": 0.0,
+    "delai_arteres_h": 2.94,
+    "delai_ruelles_h": 10.32
+  },
+  "routes": [
+    {
+      "vehicle_id": 1,
+      "distance_km": 103.21,
+      "cout_global": 625.35,
+      "n_noeuds": 729
+    },
+    {
+      "vehicle_id": 2,
+      "distance_km": 103.09,
+      "cout_global": 625.19,
+      "n_noeuds": 973
+    },
+    {
+      "vehicle_id": 3,
+      "distance_km": 102.73,
+      "cout_global": 624.76,
+      "n_noeuds": 726
+    }
+  ]
+}

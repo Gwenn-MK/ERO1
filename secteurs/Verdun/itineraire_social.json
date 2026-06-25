@@ -1,0 +1,38 @@
+{
+  "secteur": "Verdun",
+  "scenario": "social",
+  "indicateurs": {
+    "scenario": "social",
+    "n_vehicules": 3,
+    "distance_totale_km": 124.16,
+    "cout_total_$": 1650.24,
+    "duree_max_h": 4.15,
+    "couverture_%": 100.0,
+    "km_reseau": 101.0,
+    "ratio_cout_km": 16.34,
+    "arteres_couvertes_1ere_moitie_%": 63.2,
+    "ruelles_couvertes_1ere_moitie_%": 0.0,
+    "delai_arteres_h": 1.53,
+    "delai_ruelles_h": 4.15
+  },
+  "routes": [
+    {
+      "vehicle_id": 1,
+      "distance_km": 41.46,
+      "cout_global": 550.17,
+      "n_noeuds": 366
+    },
+    {
+      "vehicle_id": 2,
+      "distance_km": 41.45,
+      "cout_global": 550.15,
+      "n_noeuds": 353
+    },
+    {
+      "vehicle_id": 3,
+      "distance_km": 41.25,
+      "cout_global": 549.92,
+      "n_noeuds": 307
+    }
+  ]
+}

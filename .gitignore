@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+cache/
+*.zip
+resultats_deneigement.json

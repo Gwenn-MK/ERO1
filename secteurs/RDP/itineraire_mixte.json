@@ -1,0 +1,38 @@
+{
+  "secteur": "RDP",
+  "scenario": "mixte",
+  "indicateurs": {
+    "scenario": "mixte",
+    "n_vehicules": 3,
+    "distance_totale_km": 227.86,
+    "cout_total_$": 1775.72,
+    "duree_max_h": 7.6,
+    "couverture_%": 100.0,
+    "km_reseau": 170.15,
+    "ratio_cout_km": 10.44,
+    "arteres_couvertes_1ere_moitie_%": 82.4,
+    "ruelles_couvertes_1ere_moitie_%": 0.0,
+    "delai_arteres_h": 1.34,
+    "delai_ruelles_h": 7.6
+  },
+  "routes": [
+    {
+      "vehicle_id": 1,
+      "distance_km": 75.98,
+      "cout_global": 591.94,
+      "n_noeuds": 509
+    },
+    {
+      "vehicle_id": 2,
+      "distance_km": 75.98,
+      "cout_global": 591.94,
+      "n_noeuds": 556
+    },
+    {
+      "vehicle_id": 3,
+      "distance_km": 75.9,
+      "cout_global": 591.84,
+      "n_noeuds": 380
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "secteur": "RDP",
+  "scenario": "social",
+  "indicateurs": {
+    "scenario": "social",
+    "n_vehicules": 3,
+    "distance_totale_km": 234.26,
+    "cout_total_$": 1783.45,
+    "duree_max_h": 7.81,
+    "couverture_%": 100.0,
+    "km_reseau": 170.15,
+    "ratio_cout_km": 10.48,
+    "arteres_couvertes_1ere_moitie_%": 92.9,
+    "ruelles_couvertes_1ere_moitie_%": 0.0,
+    "delai_arteres_h": 0.55,
+    "delai_ruelles_h": 7.81
+  },
+  "routes": [
+    {
+      "vehicle_id": 1,
+      "distance_km": 78.12,
+      "cout_global": 594.53,
+      "n_noeuds": 526
+    },
+    {
+      "vehicle_id": 2,
+      "distance_km": 78.11,
+      "cout_global": 594.51,
+      "n_noeuds": 539
+    },
+    {
+      "vehicle_id": 3,
+      "distance_km": 78.03,
+      "cout_global": 594.41,
+      "n_noeuds": 411
+    }
+  ]
+}

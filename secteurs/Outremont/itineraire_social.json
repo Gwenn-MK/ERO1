@@ -1,0 +1,38 @@
+{
+  "secteur": "Outremont",
+  "scenario": "social",
+  "indicateurs": {
+    "scenario": "social",
+    "n_vehicules": 3,
+    "distance_totale_km": 92.93,
+    "cout_total_$": 1612.46,
+    "duree_max_h": 3.11,
+    "couverture_%": 100.0,
+    "km_reseau": 69.35,
+    "ratio_cout_km": 23.25,
+    "arteres_couvertes_1ere_moitie_%": 63.3,
+    "ruelles_couvertes_1ere_moitie_%": 0.0,
+    "delai_arteres_h": 1.14,
+    "delai_ruelles_h": 3.11
+  },
+  "routes": [
+    {
+      "vehicle_id": 1,
+      "distance_km": 31.07,
+      "cout_global": 537.6,
+      "n_noeuds": 295
+    },
+    {
+      "vehicle_id": 2,
+      "distance_km": 30.99,
+      "cout_global": 537.5,
+      "n_noeuds": 287
+    },
+    {
+      "vehicle_id": 3,
+      "distance_km": 30.87,
+      "cout_global": 537.36,
+      "n_noeuds": 249
+    }
+  ]
+}
