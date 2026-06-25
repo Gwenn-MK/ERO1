@@ -2,7 +2,6 @@
 """
 generate_rapport.py
 Génère le rapport PDF du projet — Optimisation Hivernale (Déneigement Montréal).
-Auteurs: L.Blet & H.Paris (EPITA)
 """
 
 import os, sys
@@ -19,7 +18,7 @@ from reportlab.platypus import (
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
 from reportlab.platypus import BaseDocTemplate, Frame, PageTemplate
 
-# ─── Palette ────────────────────────────────────────────────────────────────
+
 BLEU_EPITA   = colors.HexColor("#0A2647")
 BLEU_CLAIR   = colors.HexColor("#1B6CA8")
 CYAN_ACCENT  = colors.HexColor("#2196F3")
@@ -32,9 +31,9 @@ BLANC        = colors.white
 NOIR         = colors.HexColor("#212121")
 GRIS_TEXTE   = colors.HexColor("#546E7A")
 
-W, H = A4   # 595.27 x 841.89 pts
+W, H = A4   
 
-# ─── Styles ─────────────────────────────────────────────────────────────────
+
 styles = getSampleStyleSheet()
 
 def make_style(name, parent="Normal", **kwargs):
@@ -54,7 +53,7 @@ ST_ECO     = make_style("Eco",       fontSize=10, textColor=VERT_ECO,     leadin
 ST_SOC     = make_style("Soc",       fontSize=10, textColor=ORANGE_SOC,   leading=14, fontName="Helvetica-Bold")
 ST_MIX     = make_style("Mix",       fontSize=10, textColor=VIOLET_MIX,   leading=14, fontName="Helvetica-Bold")
 
-# ─── Helpers ─────────────────────────────────────────────────────────────────
+
 
 def spacer(h=0.3):
     return Spacer(1, h * cm)
@@ -105,11 +104,11 @@ def scenario_box(title, color, items):
     return box_table
 
 
-# ─── Contenu pages ────────────────────────────────────────────────────────────
+
 
 def page_garde(story):
     """Page de titre avec bandeau couleur."""
-    # Bandeau titre
+    
     title_data = [[
         [Paragraph("OPTIMISATION HIVERNALE", ST_TITLE),
          spacer(0.1),
@@ -129,7 +128,7 @@ def page_garde(story):
     story.append(banner)
     story.append(spacer(0.8))
 
-    # Résumé exécutif
+    
     story.append(Paragraph("Résumé exécutif", ST_H1))
     story.append(hr())
     story.append(Paragraph(
@@ -146,7 +145,7 @@ def page_garde(story):
         ST_BODY))
     story.append(spacer(0.4))
 
-    # Tableau de bord
+    
     story.append(Paragraph("Vue d'ensemble des secteurs étudiés", ST_H2))
     headers = ["Secteur", "Population", "Réseau (km)", "Véhicules proposés", "Priorité"]
     rows = [
@@ -191,7 +190,7 @@ def page_formalisation(story):
         "<b>Problème du Postier Chinois</b> (CPP) :",
         ST_BODY))
 
-    # CPP formulation
+    
     formule_data = [[
         Paragraph(
             "<b>Objectif :</b> Minimiser Σ w(e) · x(e), où w(e) est le poids de chaque arête "
@@ -512,7 +511,7 @@ def page_conclusion(story):
         ST_SMALL))
 
 
-# ─── Build PDF ───────────────────────────────────────────────────────────────
+
 
 def build_pdf(output_path: str):
     doc = SimpleDocTemplate(
